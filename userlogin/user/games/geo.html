@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie-edge">
+	<title>Quiz</title>
+	<link rel="stylesheet" href="good.css">
+</head>
+<body>
+	<h1>GEOGRAPHY</h1>
+	<div class="quiz_wrapper">
+		<div class="question" id="questionBox">
+			
+		</div>
+		<div class="options">
+			<ul id="ul">
+				<li id="op1" onclick="button(this)" onmousedown="beep5.play();"></li>
+				<li id="op2" onclick="button(this)" onmousedown="beep5.play();"></li>
+				<li id="op3" onclick="button(this)" onmousedown="beep5.play();"></li>
+				<li id="op4" onclick="button(this)" onmousedown="beep5.play();"></li>
+			</ul>
+		</div>
+		<div class="score">
+			<div class="next">
+				<button type="button" onclick="next()" id="button" onmousedown="beep5.play();">Next</button>
+			</div>
+			<div class="score-card">
+				Score: <span id="scoreCard">0</span>
+			</div>
+		</div>
+	</div>
+	<script>
+		var beep5=new Audio();
+		beep5.src="sojap.mp3";
+	</script>
+	<script src="geo.js"></script>
+</body>
+<p class="copyright">ENJOY THE GAME</p>
+<p class="copyright">DSW PROJECT 2021</p>
+</html>

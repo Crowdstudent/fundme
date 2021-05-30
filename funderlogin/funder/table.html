@@ -1,0 +1,42 @@
+<?php
+
+	mysql_connect('localhost', 'root', '');
+	mysql_select_db('result');
+	$query = "select * from users";
+	$result = mysqli_query($query);
+
+?>
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Fetch data from database</title>
+</head>
+<body>
+	<table align="center" border="1px" style="width: 700px; line-height: 30px;">
+		<tr>
+			<th colspan="4"><h2>Students Record</h2></th>
+		</tr>
+		<t>
+			<th>ID</th>
+			<th>Username</th>
+			<th>Email</th>
+			<th>Results</th>
+		</t>
+		<?php
+		while($rows=mysql_fetch_assoc($result))
+		{
+		?>
+			<tr>
+				<td><?php echo $rows['id']; ?></td>
+				<td><?php echo $rows['user_name']; ?></td>
+				<td><?php echo $rows['password']; ?></td>
+				<td><?php echo $rows['name']; ?></td>
+			</tr>
+		<?php
+		}
+		?>
+	</table>
+</body>
+</html>
