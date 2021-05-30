@@ -1,3 +1,6 @@
+https://github.com/Crowdstudent/fundme.git
+
+
 We are delighted to introduce our group project, our aim is to drive social change in our community.
 This project is presented in qualification of the Development Software (DSW02A1) module.
 
